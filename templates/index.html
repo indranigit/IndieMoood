@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta content="moodsic, vision, azure, api" name="keywords">
+	<meta content="Face -> Song" name="description">
+	<meta content="Moodsic" name="title">
+	
+	<!-- jquery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="../static/css/style.css">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../static/imgs/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/imgs/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../static/imgs/favicon-16x16.png">
+<link rel="manifest" href="../static/imgs/site.webmanifest">
+
+	<title>Moodsic</title>
+</head>
+
+<body>
+	<!-- nav bar -->
+	<nav class="navbar fixed-top navbar-light bg-light">
+		<a class="navbar-brand mb-0 h1 az" href="#"><b><h1 class="grad-text">moodsic</h1></b></a>
+		<span class="navbar-text">
+			<a href="https://azure.microsoft.com/en-us/" class="az" target="_blank">powered by microsoft azure</a>
+		</span>
+	</nav>
+
+	<br>
+	<br>
+	<br>	
+	<br>	
+	<br>	
+	<br>	
+	<br>
+	
+
+	<!-- <div class="vertical-container"> -->
+	<div class="container" style="height: 100%;">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-12 col-md-4">
+				<p class="h2 text-center"><b>Moods</b></p>
+				<br>
+			</div>
+			<div class="col-12 col-md-4">
+				<p class="h2 text-center"><b><span class="fa fa-arrow-right" aria-hidden="true"></span></b></p><br>
+			</div>
+			<div class="col-12 col-md-4">
+				<p class="h2 text-center"><b>Music</b></p>
+				<br>
+			</div>
+
+
+
+		    <div class="col-12 col-md-4 order-md-1 order-1">
+		      	<video class="float-right img-fluid img-rounded img-thumbnail" autoplay="true" id="videoElement"></video>
+			</div>
+			<div class="col-12 col-md-4 order-md-2 order-3">
+				<canvas class="img-thumbnail float-left img-fluid" id="canvas" width="640" height="480"></canvas>
+			</div>
+			<div class="col-12 col-md-4 order-md-3 order-5 text-center">
+				<p id="results-window">upload an image and we will generate a playlist for you based on your mood!</p>
+				<div id="playlist-link" style="display: none">
+					<b>
+						<a href="" id="btn-playlist" target="_blank"></a>
+						<span id="spotify-icon" class="fa fa-spotify" aria-hidden="true"></span>
+					</b>
+				</div>
+			</div>
+			
+
+
+			<div class="col-12 col-md-4 order-md-4 order-2 text-center">
+				<br>
+				<button class="btn btn-tamu-pink" id="snap">Snap Photo</button><br><br>
+			</div>
+			<div class="col-12 col-md-4 order-md-5 order-4 text-center">
+				<br>
+				<button class="btn btn-tamu-blue" id="btn-get-mood">Get Music</button><br><br>
+			</div>
+			<div class="col-12 col-md-4 order-md-6 order-6 text-center">
+			</div>
+		</div> <!-- row -->
+	    <br>
+	</div>
+
+
+
+	<!-- footer -->
+	<nav class="footer">
+		<p>created for TAMU hacks 2018 by Sophia Jefferson, Travis Benedict and Peter Dulworth &nbsp;</p>
+	</nav>
+
+	<!-- main javascript -->
+	<script src="../static/js/app.js"></script>
+</body>
+</html>
